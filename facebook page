@@ -1,0 +1,132 @@
+<html>
+<head>
+	<style>
+	.z{
+	height :30px;
+	width :320px;
+	}
+	 .b{
+	 background-color :#e9ebee;
+	}
+		.a{
+		color :white;
+		}
+		.q {
+		background-color :#4267b2;
+		font-style :strong;
+		color :white;
+		}
+	
+	</style>
+</head>
+<body>
+<table width = "100%"  border = "0" cellspacing= "0" >
+	<tr  height = "80" bgcolor = "#3b5998" >
+	<td  class = "a"	width = "60%"> <h1> <font > Facebook </font> </h1> </td>
+	<td width = "15%" > <font  color = "white"> Email</font> <br/> <input class = "F" type = "text" name = "firstname"  > <br/> <input type="checkbox" name="submit"/> <font color = "white"> Keep me logged in </font> </td>
+	<td width = "12%" > <font color = "white">Password </font> <br/><input class = "P" type = "password" name = "firstname"> <br/> <a href = "https://m.facebook.com/help/mobile-basic/213395615347144?helpref=hc_fnav"target = "_blank" > <font color = "white"> forget your password? </font> </td>
+	<td> <center><input class = "log" type = "button" value = "Log in"></center> </td>
+	</tr>
+</table>
+<table  cellpadding = "8"class = "b" width = "100%"  border = "0" >
+	<tr>
+	<td width = "60%" >	
+		<h2 class = "b" > <font color = "blue" > <b>facebook helps you connect and share with <br/>the people in your life </font > </h2>
+	</td>
+	<td width = "40%" >
+		<h2 > sign up  </h2> <br/>  <font size = "4"> <b>it`s free and alwyas will be </font>
+	</td>
+	</tr>
+	<tr >
+	<td   rowspan = "8" > <img width = "100%" src = "https://static.xx.fbcdn.net/rsrc.php/v3/yi/r/OBaVg52wtTZ.png" alt = "facebook"  > </td> 
+	<td> 
+	<form>
+	<input  class = "z" placeholder = "firstname" type = "text" name = "firstname" > </td>
+	</tr>
+	<tr>
+	<td><input class = "x" placeholder = "Lastname" type = "text" name = "surname" ></td>
+	</tr>
+	<tr>
+	<td><input placeholder = "Mobile" type = "text" name = "Mobile"></td>
+	</tr>
+	<tr>
+	<td><input class = "y" placeholder = "New Password" type = "Password" name = "Password"></td>
+	</tr>
+	<tr>
+	<td><input  class = "v" placeholder = "your Email" type = "text" name = "Mobile"></td>
+	</tr>
+	<tr>
+	<td> Gender <br/><input type = "radio" name = "Gender">Male <input type = "radio" name = "Gender">Female </td>
+	</tr>
+	<tr>
+	<td>Birthday <select>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			</select> 
+			mounth <select>
+			<option>jun</option>
+			<option>feb</option>
+			<option>mar</option>
+			<option>Apr</option>
+			<option>may</option>
+			</select>
+			Year <select>
+			<option>2000</option>
+			<option>1999</option>
+			<option>1998</option>
+			<option>1997</option>
+			<option>1996</option>
+			<option>1995</option>
+			<option>1994</option>
+			<option>1993</option>
+			<option>1992</option>
+			</select></td>
+	</tr>
+	<tr>
+	<td>
+	<input class = "up" type = "submit" style="font-size: 13; font-weight:bold; color: white; width:100px; height: 35px; background-color:#56953e; border: solid  1px #457732"value = "sign up"></form></td>
+	</tr>
+</table>
+<script>
+	document.querySelector('.log').addEventListener('click',login )
+function login(){
+	var fi = document.querySelector('.F').value
+	var Pi = document.querySelector('.P').values
+	if  (fi.length != 0 && Pi.length != 0){
+		alert("")
+	}
+	else { 
+	alert("Please fill in the Email and password")
+		
+	}
+}
+document.querySelector('.up').addEventListener('click',signup)
+function signup(){
+var zz = document.querySelector('.z').value ; 
+var xx = document.querySelector('.x').value ;
+var yy =  document.querySelector('.y').value ;
+var vv = document.querySelector('.v').value ;
+if  (zz.length == 0 ) {
+alert ("Error in Fisrt Name ")}
+else if (xx.length == 0){
+alert ('Error in Lastname')}
+else  if ( yy.length > 10 ||  yy.length < 5  ) {
+alert ("Error in Password")
+}
+else if (vv.length == 0){
+alert("Error in Your Mail")
+}
+else  {
+alert("successfully registered")}
+}
+
+</script>
+</body>
+</html>
